@@ -7,19 +7,171 @@
 	<script src="js/wow.min.js" type="text/javascript" charset="utf-8"></script>
 	<title>刘宸煊的网站</title>
 	<h1>欢迎来到我的网站！！！</h1>
+	<style type="text/css">
+		body {
+            width: 95%;
+            background: url('http://www.crossbrother.tk/%E7%BB%B4%E5%A4%9A%E5%88%A9%E4%BA%9A%E6%B8%AF.jpg') no-repeat;
+            background-size: 100%;
+            margin: 0 auto;
+            background-attachment:fixed;
+			-moz-background-size:cover;
+			-webkit-background-size:cover;
+        }
+        
+        .bj{
+            background-color: rgba(255,255,255,0.8);
+            padding: 13px;
+            margin-bottom: 10px;
+            border-radius:5px ;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);            
+
+        }
+        
+        /* 创建两列 */
+        /* Left column */
+        .left {
+            float: left;
+            width: 23%;
+            margin-right: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* 右侧栏 */
+        .right {
+            float: right;
+            width: 75%;
+            margin-right: 5px;
+            margin-bottom: 20px;
+        }
+        
+        a {
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        
+        img{
+            width: 32.5%;
+        }
+        .work  img{
+            width: 100%;
+        }
+       .work{
+            width: 32.5%;
+            display: inline-block;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+	</style>
 </head>
 <body>
-	<div id="background" data-0="background-image: linear-gradient(45deg, rgba(0,0,139,0.9) 5%,rgba(0,0,0,1) 90%);"
-		 data-200="background-image: linear-gradient(-45deg, rgba(0,0,100,0.9) 20%,rgba(0,0,0,1) 90%);" data-900="background-image: linear-gradient(-45deg, rgba(200,125,100,0.9) 0%,rgba(0,0,0,1) 75%);"
-		 data-1200="background-image: linear-gradient(135deg, rgba(150,50,200,0.9) 5%,rgba(0,0,0,1) 75%);" data-1700="background-image: linear-gradient(-45deg, rgba(0,0,139,0.9) 5%, rgba(0,0,0,1) 90%);">
-	</div>
-	<ol>
-   		<li><input type=button onclick="window.open('/article_001.html')" value="点我进入《从心语园到人朝学校》"></li>
-   		<li><input type=button onclick="window.open('/article_002.html')" value="点我进入《第二篇文章》"></li>
-   		<li><input type=button onclick="window.open('/article_003.html')" value="点我进入《期中考试的闲话的闲话之闲话》"></li>
-	</ol>
-	
-	<a href="community.liuchenxuan.ga">点我进入刘宸煊论坛</a>	
-	
+	<div class="bj">
+            <a href="#introduce">个人简介</a>
+            <a href="#article">文章</a>
+            <a href="#photo">个人相册</a>
+<!--             <a href="#music">音乐播放器</a>
+            <a href="#program">编程作品</a> -->
+            <a href="blog.liuchenxuan.ga">个人博客</a>
+
+    </div>
+    <!--=====================内容区域（下布局）======================================-->
+    <div class="main">
+       	<!--=====================内容区域（左布局）=============================-->
+        <div class="left">
+            <!--个人简介-->   
+            <div id="introduce" class="bj" font-style:italic>
+                <img src="../static/images/introduce.png" style="width:100%">
+                <h3 class="card-title">刘宸煊</h3>
+                <p class="card-text">民族：汉族</p>
+                <p class="card-text">生日：2007.12.22</p>
+                <p class="card-text">爱好:读书、看电影、编程</p>
+                <p class="card-text">技能：Python、Html</p>
+            </div>
+		    <div id="article" class="bj">
+				<ol>
+			   		<li><input type=button onclick="window.open('/article_001.html')" value="点我进入《从心语园到人朝学校》"></li>
+			   		<li><input type=button onclick="window.open('/article_002.html')" value="点我进入《第二篇文章》"></li>
+			   		<li><input type=button onclick="window.open('/article_003.html')" value="点我进入《期中考试的闲话的闲话之闲话》"></li>
+				</ol>
+			</div>
+		    <!--音乐播放器-->
+            <div id="music" class="bj">
+                <h3 class="card-title">音乐播放器</h3>
+                上海滩:
+                <audio controls="controls" style="width:100%">
+                    <source src="crossbrother.tk/上海滩.mp3">
+                </audio>
+                光辉岁月:
+                <audio controls="controls" style="width:100%">
+                    <source src="crossbrother.tk/光辉岁月.mp3">
+                </audio>
+                甜蜜蜜:
+                <audio controls="controls" style="width:100%">
+                    <source src="crossbrother.tk/甜蜜蜜.mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="right">
+            <!--个人相册-->
+            <div id ="photo" class="bj">
+                <h2><span><!-- <img src="../static/images/相册.png" style="width:68px" align="middle"> --></span>个人相册</h2>
+<!--                 <img src="../static/images/X公路.jpg">
+                <img src="../static/images/X蛋糕.jpg" >
+                <img src="../static/images/X梨花.png">
+                <img src="../static/images/X烟花.png">
+                <img src="../static/images/X猫.png">
+                <img src="../static/images/X游轮.png"> -->
+            </div>
+            
+            <!--编程作品-->
+<!--             <div id="program" class="bj">
+                <h2><span><img src="../static/images/作品.png" style="width:68px" align="middle"></span>编程作品</h2>
+                
+                <div class="work">
+                    <img src="../static/images/沙漠.jpg">
+                    <p>俄罗斯方块</p>
+                </div>
+                
+                <div class="work">
+                    <img src="../static/images/自行车.jpg">
+                    <p>迷宫大冒险</p>
+                </div>
+                
+                <div class="work">
+                    <img src="../static/images/音乐.jpg">
+                    <p>荒岛生存</p>
+                </div>
+            </div> -->
+            
+            <!--编程知识分享-->
+<!--             <div id="share" class="bj">
+                <h2><span><img src="../static/images/分享.png" style="width:68px" align="middle"></span>编程知识分享</h2>
+                <p>魔术师的小袋子里有好多神奇的小玩意，每一个都好玩！</p>
+                <p>电脑真是一个非常有趣的东西，我和电脑有着不解之缘，尤其是编程。</p>
+                <p>我爸爸是一个电脑工程师，笔记本电脑是他的随身之物，我就对电脑有着痴
+                    迷般的兴趣，从五岁起就开始玩电脑游戏，但开始时因为输给电脑而痛哭流
+                    涕，逐渐电脑成了我的手下败将，这锻炼了我的毅力。</p>
+                <p>自从上了初中，同学就跟我谈起了电脑编程序，我当时很羡慕他们，自己也想学，从此我认识了
+                    C站。于是我便开始我的编程之路，开始很简单，可后来，程序就复杂了许
+                    多，我有时真想放弃，可是回想起以前玩电脑游戏时的毅力，我还是一步一
+                    步地走了过来，虽然这条路难走，满是泥泞，遍是荆棘，可我还是用当年学
+                    打游戏时的毅力坚持了过来，因为我知道行百里者半九十，坚持就是胜利，
+                    付出的心血不会白费。</p>
+                <p>终于程序学得差不多了，“求公因数”、“阶乘”等都
+                    可以不费吹灰之力地完成，再复杂的程序也不在话下，我在C站上传了许多
+                    我自己做的小游戏，还认识到了许多跟我一样喜爱编程的同学们，同时也
+                    得到了C站老师的夸奖，我真是喜出望外。</p>
+                <p>在C站我收获了好多小伙伴，得到了1000个赞，389个粉丝和986条留言，我还和C站的好朋友一起成立了
+                    自己的工作室，实在是太有成就感了！</p> -->
+           
+            </div>
+        </div>
+    </div>
 </body>
 </html>
